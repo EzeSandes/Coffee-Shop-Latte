@@ -1,0 +1,76 @@
+@import "./general.css";
+
+/**********************/
+/******* HEADER *********/
+/**********************/
+
+.header {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  color: var(--c-white-1);
+
+  position: relative;
+
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url("/img/header/latte-and-donut.jpg");
+  background-size: cover;
+
+  padding-top: 1.2rem;
+}
+
+.header-logo {
+  height: 8rem;
+}
+
+.header .list {
+  gap: 3.4rem;
+}
+
+.main-nav {
+  width: 75%;
+  text-align: center;
+}
+
+.nav-item {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.top-address,
+.book-now {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.section-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  gap: 6.4rem;
+}
+
+.hero-text-box {
+  gap: 1.2rem;
+}
+
+.hero-description {
+  font-size: 2.4rem;
+}
+
+/**********************/
+/******* *********/
+/**********************/
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 / 113 / 130 / 150
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/

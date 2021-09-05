@@ -1,0 +1,209 @@
+/*
+**************************************
+**************************************
+--- 01 TYPOGRAPHY SYSTEM
+
+-Fonts
+font-family: 'Lora', serif;
+font-family: 'Nunito', sans-serif;
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+'Lora'
+Medium: 500
+Bold: 700
+
+'Nunito'
+Default: 400
+Semi-Bold: 600
+Bold-Black: 900
+
+- Line heights
+Default: 1
+Medium: 1.2
+
+- Letter spacing
+-0.5px
+
+**************************************
+**************************************
+--- 02 COLORS
+
+-Primary: #E46B3F
+Tints: #FCF0EC
+
+- Greys
+   Primary: #343434
+
+- Black: #000
+- White: #FFF
+**************************************
+**************************************
+
+--- 03 SPACE SYSTEM
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+**************************************
+**************************************
+
+--- 04 BORDER RADIUS
+
+-Default: 8px
+-Small: 4px
+
+**************************************
+**************************************
+*/
+
+:root {
+  --c-primary-main: #e46b3f;
+  --c-primary-tint-1: #fcf0ec;
+  --c-primary-tint-2: #f2b59f;
+  --c-grey-1: #343434;
+  --c-black-1: #000;
+  --c-white-1: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #343434;
+
+  overflow-x: hidden;
+}
+
+.container,
+.container-big {
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.container-big {
+  max-width: 140rem;
+}
+
+.container {
+  max-width: 120rem;
+}
+
+/**********************/
+/******* LIST *********/
+/**********************/
+
+.list {
+  list-style: none;
+
+  display: flex;
+  gap: 1.8rem;
+}
+/**********************/
+/******* FLEX *********/
+/**********************/
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex--jc-space-btw {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+/**********************/
+/******* LINKS *********/
+/**********************/
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--c-white-1);
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: var(--c-primary-tint-2);
+}
+
+/**********************/
+/******* HEADING *********/
+/**********************/
+
+.heading-primary,
+.heading-secundary,
+.heading-tertiary {
+  text-transform: uppercase;
+  font-size: 11rem;
+  letter-spacing: -0.5px;
+}
+
+/**********************/
+/******* BTN *********/
+/**********************/
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 2rem;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  padding: 1.8rem 4.8rem;
+  border-radius: 4px;
+
+  transition: all 0.3s;
+}
+
+.btn--outline,
+.btn--outline:link,
+.btn--outline:visited {
+  color: var(--c-white-1);
+  border: 1px solid var(--c-primary-tint-2);
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  border: 1px solid var(--c-white-1);
+}
+
+/**********************/
+/*******  *********/
+/**********************/
+
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 / 114 / 130 / 150
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
