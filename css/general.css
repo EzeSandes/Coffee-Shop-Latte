@@ -23,6 +23,7 @@ Bold-Black: 900
 - Line heights
 Default: 1
 Medium: 1.2
+Paragraph default: 1.6
 
 - Letter spacing
 -0.5px
@@ -129,8 +130,17 @@ body {
 }
 
 .flex-center {
+  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/**********************/
+/******* GRID *********/
+/**********************/
+
+.grid {
+  display: grid;
 }
 
 /**********************/
@@ -158,10 +168,21 @@ body {
 .heading-secundary,
 .heading-tertiary {
   text-transform: uppercase;
-  font-size: 11rem;
   letter-spacing: -0.5px;
 }
 
+.heading-primary {
+  font-size: 11rem;
+}
+
+.heading-secundary {
+  font-size: 7rem;
+}
+
+.heading-quaternary {
+  line-height: 1.2;
+  font-size: 3rem;
+}
 /**********************/
 /******* BTN *********/
 /**********************/
@@ -194,6 +215,18 @@ body {
 .btn--outline:hover,
 .btn--outline:active {
   border: 1px solid var(--c-white-1);
+}
+
+/**********************/
+/******* MARGIN *********/
+/**********************/
+
+.margin-bottom-sm {
+  margin-bottom: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
 }
 
 /**********************/

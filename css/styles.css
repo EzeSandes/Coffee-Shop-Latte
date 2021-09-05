@@ -1,4 +1,4 @@
-@import "./general.css";
+/* @import "./general.css"; */
 
 /**********************/
 /******* HEADER *********/
@@ -20,6 +20,7 @@
   background-size: cover;
 
   padding-top: 1.2rem;
+  margin-bottom: 14rem;
 }
 
 .header-logo {
@@ -65,8 +66,53 @@
 }
 
 /**********************/
+/******* ABOUT US *********/
+/**********************/
+.section-about {
+  margin-bottom: 14rem;
+}
+
+.about-box {
+  display: grid;
+  grid-template-columns: 65fr 35fr;
+  column-gap: 4.8rem;
+}
+
+.token {
+  color: var(--c-primary-main);
+}
+
+.about-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.img-about-box {
+  position: relative;
+  align-self: start;
+}
+
+.img-about-us {
+  height: 56rem;
+  border-radius: 8px;
+}
+
+.border-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 34.7rem;
+  height: 56rem;
+  border: 2px solid var(--c-primary-main);
+  border-radius: 8px;
+  transform: translate(17px, 21px);
+  z-index: -1;
+}
+
+/**********************/
 /******* *********/
 /**********************/
+
 /*
 - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 / 113 / 130 / 150
