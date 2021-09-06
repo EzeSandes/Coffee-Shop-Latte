@@ -205,8 +205,35 @@
   background-color: var(--c-primary-main);
 }
 /**********************/
-/******* *********/
+/******* FEATURES *********/
 /**********************/
+
+.features {
+  gap: 4rem;
+}
+
+.feauture {
+  color: var(--c-primary-main);
+  gap: 1rem;
+}
+
+.feauture h3 {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
+.feauture img {
+  stroke: var(--c-primary-main);
+  height: 8rem;
+  padding: 1.6rem;
+  background-color: var(--c-primary-tint-1);
+  border-radius: 50%;
+}
+
+.feauture p {
+  font-size: 1.8rem;
+  text-align: center;
+}
 /**********************/
 /******* *********/
 /**********************/
