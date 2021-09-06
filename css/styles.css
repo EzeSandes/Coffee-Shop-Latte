@@ -19,6 +19,7 @@
   background-size: cover;
 
   padding-top: 1.2rem;
+  overflow-y: hidden;
 }
 
 .header-logo {
@@ -76,11 +77,6 @@
   color: var(--c-primary-main);
 }
 
-.about-text {
-  font-size: 1.8rem;
-  line-height: 1.6;
-}
-
 .img-about-box {
   position: relative;
   align-self: start;
@@ -108,7 +104,8 @@
 /**********************/
 
 .section-break {
-  background: url("../img/cookies.jpg") no-repeat center center fixed;
+  background: url("../img/cookies.jpg") no-repeat center 20% fixed;
+  /* background: url("../img/cookies.jpg") no-repeat center 50% scroll; */
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../img/cookies.jpg");
   background-size: cover;
@@ -121,6 +118,95 @@
   padding: 1.2rem 0;
   height: 24rem;
 }
+
+/**********************/
+/******* MENU *********/
+/**********************/
+
+.section-menu {
+  margin-bottom: 4rem;
+}
+
+.menu-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40fr 60fr;
+
+  align-items: center;
+  justify-items: stretch;
+  row-gap: 2rem;
+  column-gap: 1.8rem;
+
+  border: 2px solid var(--c-primary-main);
+  border-radius: 8px;
+  width: 95%;
+  height: 97%;
+}
+
+.menu-gallery img {
+  border-radius: 8px;
+}
+
+.menu-gallery img:nth-child(1) {
+  height: 30rem;
+  width: 33.2rem;
+  align-self: self-end;
+}
+
+.menu-gallery img:nth-child(2) {
+  height: 26rem;
+  width: 24.2rem;
+  align-self: self-end;
+}
+
+.menu-gallery img:nth-child(4) {
+  height: 44rem;
+  width: 27.7rem;
+  align-self: start;
+}
+
+.menu-gallery--box-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.8rem;
+  align-self: start;
+  justify-items: end;
+}
+
+.menu-gallery--box-item img:first-child,
+.menu-gallery--box-item img:last-child {
+  height: 20.1rem;
+  width: 29rem;
+}
+
+.menu-text--pharagraph {
+  text-align: start;
+  margin: 2rem 0 3rem;
+}
+
+.menu-text .btn--outline {
+  font-weight: 600;
+  color: var(--c-primary-main);
+  border-width: 2px;
+  border-color: var(--c-primary-main);
+}
+
+.menu-text .btn--outline:hover,
+.menu-text .btn--outline:active {
+  color: var(--c-white-1);
+  background-color: var(--c-primary-main);
+}
+/**********************/
+/******* *********/
+/**********************/
 /**********************/
 /******* *********/
 /**********************/

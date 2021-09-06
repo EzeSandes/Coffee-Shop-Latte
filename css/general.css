@@ -106,6 +106,14 @@ body {
 }
 
 /**********************/
+/******* IMG *********/
+/**********************/
+
+.scale-sm {
+  transform: scale(1.05);
+}
+
+/**********************/
 /******* LIST *********/
 /**********************/
 
@@ -183,6 +191,20 @@ body {
   line-height: 1.2;
   font-size: 3rem;
 }
+
+.border-bottom {
+  display: inline-block;
+  border-bottom: 3px solid var(--c-primary-main);
+}
+/**********************/
+/******* PHARAGRAPH *********/
+/**********************/
+
+.text-pharagraph {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
 /**********************/
 /******* BTN *********/
 /**********************/
