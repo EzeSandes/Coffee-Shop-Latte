@@ -137,6 +137,8 @@
           </div>
         </div>
       </section>
+
+      <!-- FEATURES -->
       <section class="section-feature margin-section-bottom">
         <div class="container flex-center features">
           <div class="feauture flex-center flex-col">
@@ -162,6 +164,112 @@
           </div>
         </div>
       </section>
+
+      <!-- RESERVATION -->
+      <section class="section-reservation margin-section-bottom">
+        <div class="container">
+          <div class="reservation">
+            <div class="reservation-text-box">
+              <h3 class="heading-quinary">Visit Us</h3>
+              <h2 class="heading-tertiary border-bottom">Make a reservation</h2>
+              <p class="reservation-text">
+                You can make a reservation any time online or by calling (000)
+                1-222-333-444 during our opening hours.
+              </p>
+              <form name="reserve-action" class="reservation-form">
+                <div>
+                  <label for="full-name">Full Name*</label>
+                  <input
+                    type="text"
+                    id="full-name"
+                    placeholder="ej: Ezequiel Sandes"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Email*</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="ej: contact@example.com"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="phone">Phone*</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="1-222-333-444"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="date-time">Date &amp; Time*</label>
+                  <input type="datetime-local" id="date-time" required />
+                </div>
+                <div>
+                  <label for="seats">Seats*</label>
+                  <input type="number" id="seats" min="0" max="20" required />
+                </div>
+                <div class="textarea-form-box">
+                  <label for="requests">Special Requests</label>
+                  <textarea
+                    rows="4"
+                    name="requests"
+                    id="requests"
+                    placeholder="Any special request? Tell us!"
+                  ></textarea>
+                </div>
+                <button class="btn btn--form">Book Now!</button>
+              </form>
+            </div>
+            <div
+              class="reservation-img-box"
+              role="img"
+              aria-label="Woman enjoying serving cafe"
+            ></div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="section-footer">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-item">
+            <h3>Address</h3>
+            <p>525 Westwood Plaza, Los Angeles 90095</p>
+          </div>
+          <div class="contact-item">
+            <h3>Reservation</h3>
+            <p>(000)1-222-333-444<br /><br />contact@example.com</p>
+          </div>
+          <div class="contact-item">
+            <h3>Open Hours</h3>
+            <p>
+              Monday-Friday: 10AM - 10PM<br /><br />Saturday-Sunday: 9AM - 11PM
+            </p>
+          </div>
+        </div>
+        <div class="social-box">
+          <img
+            src="img/icons/facebook-logo.svg"
+            alt="facebook logo"
+            class="social-item"
+          />
+          <img
+            src="img/icons/instagram-logo.svg"
+            alt="instagram logo"
+            class="social-item"
+          />
+          <img
+            src="img/icons/twitter-logo.svg"
+            alt="twitter logo"
+            class="social-item"
+          />
+        </div>
+        <p>2021 &copy; Eze. Designed by Ezequiel Sandes</p>
+      </div>
+    </footer>
   </body>
 </html>

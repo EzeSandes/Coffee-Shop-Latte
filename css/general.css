@@ -34,7 +34,8 @@ Paragraph default: 1.6
 
 -Primary: #E46B3F
 Tints: #FCF0EC
-
+      #f2b59f
+      #efa68c
 - Greys
    Primary: #343434
 
@@ -65,6 +66,8 @@ Tints: #FCF0EC
   --c-primary-main: #e46b3f;
   --c-primary-tint-1: #fcf0ec;
   --c-primary-tint-2: #f2b59f;
+  --c-primary-tint-3: #efa68c;
+  --c-primary-tint-4: #e77a52;
   --c-grey-1: #343434;
   --c-black-1: #000;
   --c-white-1: #fff;
@@ -174,7 +177,9 @@ body {
 
 .heading-primary,
 .heading-secundary,
-.heading-tertiary {
+.heading-tertiary,
+.heading-quaternary,
+.heading-quinary {
   text-transform: uppercase;
   letter-spacing: -0.5px;
 }
@@ -187,9 +192,17 @@ body {
   font-size: 7rem;
 }
 
+.heading-tertiary {
+  font-size: 5rem;
+}
+
 .heading-quaternary {
   line-height: 1.2;
   font-size: 3rem;
+}
+
+.heading-quinary {
+  font-size: 2rem;
 }
 
 .border-bottom {

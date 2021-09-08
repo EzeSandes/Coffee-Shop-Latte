@@ -235,6 +235,113 @@
   text-align: center;
 }
 /**********************/
+/******* RESERVATION *********/
+/**********************/
+
+.reservation {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.reservation h3 {
+  color: var(--c-primary-main);
+}
+
+.reservation h2,
+.reservation h3 {
+  text-align: center;
+}
+
+.reservation-text-box {
+  background-color: var(--c-primary-tint-2);
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+
+  border-radius: 8px 0 0 8px;
+}
+
+.reservation-text {
+  font-size: 1.8rem;
+  margin: 2rem 0 4rem 0;
+}
+
+.reservation-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, min-content);
+  column-gap: 3.2rem;
+  row-gap: 2rem;
+}
+
+.reservation-form label {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.reservation-form input,
+.textarea-form-box textarea {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border-radius: 8px;
+  border: none;
+
+  background-color: var(--c-primary-tint-1);
+  color: #666;
+
+  transition: all 0.3s;
+}
+
+.reservation-form input:hover,
+.textarea-form-box textarea:hover {
+  background-color: #eee;
+}
+
+.reservation-form input:focus,
+.textarea-form-box textarea:focus {
+  color: #333;
+  background-color: #fff;
+}
+
+.reservation *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem rgba(253, 242, 233, 0.5);
+}
+
+.textarea-form-box {
+  grid-column: 1 / -1;
+  grid-row: 4 / 5;
+}
+
+.reservation .btn,
+.reservation .btn:link,
+.reservation .btn:visited {
+  grid-row: 5/ -1;
+  grid-column: 1 / -1;
+  align-self: center;
+  justify-self: center;
+  width: 50%;
+
+  background-color: var(--c-primary-main);
+  color: var(--c-white-1);
+}
+
+.reservation .btn:hover,
+.reservation .btn:active {
+  background-color: var(--c-primary-tint-4);
+}
+
+.reservation-img-box {
+  background: url("../img/cafe-person-1-2.jpg") no-repeat center center scroll;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/cafe-person-1-2.jpg");
+  background-size: cover;
+
+  border-radius: 0 8px 8px 0;
+}
+/**********************/
 /******* *********/
 /**********************/
 
