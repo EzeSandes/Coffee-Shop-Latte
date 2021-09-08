@@ -208,7 +208,8 @@
 /******* FEATURES *********/
 /**********************/
 
-.features {
+.features,
+.contact-box {
   gap: 4rem;
 }
 
@@ -217,7 +218,8 @@
   gap: 1rem;
 }
 
-.feauture h3 {
+.feauture h3,
+.contact-item h3 {
   text-transform: uppercase;
   font-size: 2.4rem;
 }
@@ -341,6 +343,39 @@
 
   border-radius: 0 8px 8px 0;
 }
+/**********************/
+/******* FOOTER *********/
+/**********************/
+
+.contact-box {
+  align-items: baseline;
+}
+
+.contact-item {
+  text-align: center;
+  font-size: 1.6rem;
+  gap: 2rem;
+}
+
+.copyrigth {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.social-item {
+  padding: 1.6rem;
+  margin: 1.2rem;
+  border-radius: 50%;
+
+  transition: all 0.7s ease-out;
+}
+
+.social-item:hover,
+.social-item:active {
+  background-color: var(--c-primary-tint-2);
+}
+
 /**********************/
 /******* *********/
 /**********************/
