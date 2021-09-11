@@ -197,7 +197,7 @@ body {
 }
 
 .heading-quaternary,
-.heading-quinary{
+.heading-quinary {
   text-transform: none;
 }
 
@@ -273,8 +273,8 @@ body {
   margin-bottom: 14rem !important;
 }
 
-.padding-section {
-  padding: 14rem 0 !important;
+.padding-section-top {
+  padding-top: 14rem !important;
 }
 
 /**********************/

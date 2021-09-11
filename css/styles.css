@@ -42,7 +42,23 @@
   /*Agregar la clase a "main-nav": .flex--jc-space-btw */
   padding: 0.4rem 1.6rem;
   z-index: 1;
-  background-color: red;
+  background-color: var(--c-white-1);
+  box-shadow: 0 -6px 10px var(--c-black-1);
+}
+
+.sticky .main-nav .header-logo {
+  filter: invert(80%) sepia(0%) saturate(0%) hue-rotate(165deg) brightness(87%)
+    contrast(90%);
+}
+
+.sticky .main-nav .link {
+  color: var(--c-primary-main);
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.sticky .main-nav .link:hover {
+  border-color: var(--c-primary-tint-3);
 }
 
 .main-nav {
