@@ -30,6 +30,21 @@
   gap: 3.4rem;
 }
 
+.sticky .main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  /*Agregar la clase a "main-nav": .flex--jc-space-btw */
+  padding: 0.4rem 1.6rem;
+  z-index: 1;
+  background-color: red;
+}
+
 .main-nav {
   width: 75%;
   text-align: center;
@@ -64,6 +79,11 @@
   font-size: 2.4rem;
 }
 
+.header .btn--outline:hover,
+.header .btn--outline:active {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 /**********************/
 /******* ABOUT US *********/
 /**********************/
@@ -95,7 +115,7 @@
   height: 56rem;
   border: 2px solid var(--c-primary-main);
   border-radius: 8px;
-  transform: translate(17px, 21px);
+  transform: translate(1.7rem, 2.1rem);
   z-index: -1;
 }
 
@@ -185,6 +205,10 @@
 .menu-gallery--box-item img:last-child {
   height: 20.1rem;
   width: 29rem;
+}
+
+.menu-text .heading-secundary {
+  font-size: 6rem;
 }
 
 .menu-text--pharagraph {
@@ -279,6 +303,10 @@
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 0.6rem;
+}
+
+.textarea-form-box textarea {
+  resize: vertical;
 }
 
 .reservation-form input,
@@ -379,11 +407,3 @@
 /**********************/
 /******* *********/
 /**********************/
-
-/*
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 / 113 / 130 / 150
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/

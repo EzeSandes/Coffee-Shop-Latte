@@ -196,6 +196,11 @@ body {
   font-size: 5rem;
 }
 
+.heading-quaternary,
+.heading-quinary{
+  text-transform: none;
+}
+
 .heading-quaternary {
   line-height: 1.2;
   font-size: 3rem;
@@ -266,6 +271,10 @@ body {
 
 .margin-section-bottom {
   margin-bottom: 14rem !important;
+}
+
+.padding-section {
+  padding: 14rem 0 !important;
 }
 
 /**********************/

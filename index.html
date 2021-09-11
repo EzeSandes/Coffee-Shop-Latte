@@ -19,6 +19,7 @@
     <!-- IMPORTED "general.css" in "Styles.css" -->
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
   </head>
   <body>
     <header class="header margin-section-bottom">
@@ -29,16 +30,18 @@
             <p>Los Angeles 90095</p>
           </div>
           <nav class="main-nav">
-            <img
-              class="header-logo"
-              src="img/logos/Logo-coffee-latte.png"
-              alt="Latte Coffee Shop Logo"
-            />
+            <a href="#"
+              ><img
+                class="header-logo"
+                src="img/logos/Logo-coffee-latte.png"
+                alt="Latte Coffee Shop Logo"
+              />
+            </a>
             <ul class="list flex-center">
               <li><a href="#" class="link nav-item">Home</a></li>
-              <li><a href="#" class="link nav-item">About</a></li>
-              <li><a href="#" class="link nav-item">Menu</a></li>
-              <li><a href="#" class="link nav-item">Reservation</a></li>
+              <li><a href="#about" class="link nav-item">About</a></li>
+              <li><a href="#menu" class="link nav-item">Menu</a></li>
+              <li><a href="#reserv" class="link nav-item">Reservation</a></li>
             </ul>
           </nav>
           <div class="book-now">
@@ -58,7 +61,8 @@
       </div>
     </header>
     <main>
-      <section class="section-about margin-section-bottom">
+      <!-- ABOUT SECTION -->
+      <section class="section-about margin-section-bottom" id="about">
         <div class="container">
           <div class="about-box">
             <div class="about-box--text">
@@ -107,7 +111,7 @@
       </section>
 
       <!-- MENU -->
-      <section class="section-menu">
+      <section class="section-menu" id="menu">
         <div class="container-big">
           <div class="menu-box">
             <div class="menu-gallery">
@@ -166,7 +170,7 @@
       </section>
 
       <!-- RESERVATION -->
-      <section class="section-reservation margin-section-bottom">
+      <section class="section-reservation margin-section-bottom" id="reserv">
         <div class="container">
           <div class="reservation">
             <div class="reservation-text-box">
