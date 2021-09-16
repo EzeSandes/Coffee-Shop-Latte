@@ -12,6 +12,94 @@
   }
 }
 
+/**************************/
+/* BELOW 959px (Tablets) */
+/**************************/
+
+@media (max-width: 60em) {
+  html {
+    /* 8px / 16px = 0.5*/
+    font-size: 50%;
+  }
+
+  .menu-box {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .menu-gallery {
+    width: 56%;
+  }
+}
+
+/**************************/
+/* BELOW 884px (Tablets) */
+/**************************/
+
+@media (max-width: 55em) {
+  .menu-gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .menu-text {
+    grid-row: 1;
+  }
+
+  .reservation {
+    grid-template-columns: 55fr 45fr;
+  }
+
+  .reservation-form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .textarea-form-box {
+    grid-row: unset;
+  }
+
+  .reservation .btn,
+  .reservation .btn:link,
+  .reservation .btn:visited {
+    grid-row: unset;
+    width: 100%;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .about-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: 45fr 55fr;
+    justify-items: center;
+    row-gap: 4.8rem;
+  }
+
+  .features,
+  footer .contact-box {
+    flex-direction: column;
+  }
+
+  footer .contact-box {
+    gap: 10rem;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+@media (max-width: 34em) {
+  .reservation {
+    grid-template-columns: 1fr;
+  }
+
+  .reservation-text-box {
+    border-radius: 8px;
+  }
+}
 /*
 - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 / 114 / 130 / 150
