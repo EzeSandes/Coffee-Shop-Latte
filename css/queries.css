@@ -37,13 +37,32 @@
 /**************************/
 
 @media (max-width: 55em) {
-  .menu-gallery img {
-    width: 100%;
-    height: auto;
-  }
-
   .menu-text {
     grid-row: 1;
+  }
+
+  .menu-gallery img:nth-child(1) {
+    height: 28rem;
+    width: 31.2rem;
+    align-self: self-end;
+  }
+
+  .menu-gallery img:nth-child(2) {
+    height: 24rem;
+    width: 22.2rem;
+    align-self: self-end;
+  }
+
+  .menu-gallery img:nth-child(4) {
+    height: 42rem;
+    width: 25.7rem;
+    align-self: start;
+  }
+
+  .menu-gallery--box-item img:first-child,
+  .menu-gallery--box-item img:last-child {
+    height: 18.1rem;
+    width: 27rem;
   }
 
   .reservation {
@@ -71,6 +90,10 @@
 /**************************/
 
 @media (max-width: 44em) {
+  .heading-primary {
+    font-size: 9rem;
+  }
+
   .about-box {
     grid-template-columns: 1fr;
     grid-template-rows: 45fr 55fr;
@@ -78,9 +101,38 @@
     row-gap: 4.8rem;
   }
 
+  .menu-gallery {
+    width: 65%;
+  }
+
+  .menu-gallery img:nth-child(1) {
+    height: 26rem;
+    width: 29.2rem;
+    align-self: self-end;
+  }
+
+  .menu-gallery img:nth-child(2) {
+    height: 22rem;
+    width: 20.2rem;
+    align-self: self-end;
+  }
+
+  .menu-gallery img:nth-child(4) {
+    height: 40rem;
+    width: 23.7rem;
+    align-self: start;
+  }
+
+  .menu-gallery--box-item img:first-child,
+  .menu-gallery--box-item img:last-child {
+    height: 16.1rem;
+    width: 25rem;
+  }
+
   .features,
   footer .contact-box {
     flex-direction: column;
+    align-items: center;
   }
 
   footer .contact-box {
@@ -89,17 +141,55 @@
 }
 
 /**************************/
-/* BELOW 704px (Smaller tablets) */
+/* BELOW 541px (Smaller tablets) */
 /**************************/
 @media (max-width: 34em) {
+  .scale-sm {
+    transform: none;
+  }
+  .menu-gallery {
+    width: 65%;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
   .reservation {
     grid-template-columns: 1fr;
   }
 
+  .menu-gallery {
+    width: 87%;
+    justify-items: center;
+  }
+
+  .menu-gallery img:nth-child(1),
+  .menu-gallery img:nth-child(2),
+  .menu-gallery img:nth-child(4) {
+    height: 95%;
+    width: 95%;
+    align-self: center;
+  }
+
+  .menu-gallery--box-item {
+    align-self: center;
+    justify-items: center;
+  }
+
   .reservation-text-box {
     border-radius: 8px;
+    padding: 4.8rem 2.4rem 6.4rem 2.4rem;
   }
 }
+
+/**************************/
+/* BELOW 400px (Smaller smarthphones) */
+/**************************/
+@media (max-width: 25em) {
+  .heading-primary {
+    font-size: 8rem;
+  }
+}
+
 /*
 - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 / 114 / 130 / 150
