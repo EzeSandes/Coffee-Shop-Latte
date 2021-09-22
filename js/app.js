@@ -69,6 +69,22 @@ allSectionsEl.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("section--hidden");
 });
+///////////////////////////////////////////////////////////
+// Mobile Nav
+const btnMobileNavEl = document.querySelector(".btn-mobile-nav");
+const mainNavEl = document.querySelector(".main-nav");
+
+btnMobileNavEl.addEventListener("click", function (e) {
+  e.preventDefault();
+  mainNavEl.classList.toggle("nav-open");
+});
+
+//Close Mobile Nav when click on a Link
+const listNavLinksEl = document.querySelector(".list");
+listNavLinksEl.addEventListener("click", function (e) {
+  if (e.target.classList.contains("link"))
+    mainNavEl.classList.remove("nav-open");
+});
 
 ///////////////////////////////////////////////////////////
 // Set Year

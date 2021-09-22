@@ -273,6 +273,16 @@ body {
   border: 1px solid var(--c-white-1);
 }
 
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.btn-mobile-nav--icon {
+  height: 7rem;
+}
 /**********************/
 /******* MARGIN *********/
 /**********************/
