@@ -12,6 +12,8 @@ const obs = new IntersectionObserver(
     if (ent.isIntersecting) document.body.classList.remove("sticky");
 
     if (!ent.isIntersecting) document.body.classList.add("sticky");
+
+    headerEl.classList.toggle("nav-header--mobile");
   },
   {
     root: null,

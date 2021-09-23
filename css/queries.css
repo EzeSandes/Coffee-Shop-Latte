@@ -133,6 +133,62 @@
 /**************************/
 
 @media (max-width: 44em) {
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0.4rem 1.6rem;
+    z-index: 1;
+    background-color: var(--c-black-2);
+  }
+
+  .nav-header--mobile .main-nav .list {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateX(100%);
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    gap: 15rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-header--mobile .nav-open .list {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+  }
+
+  .nav-header--mobile .nav-open .list .link {
+    color: var(--c-primary-main);
+    font-size: 4.8rem;
+  }
+
+  .nav-header--mobile .btn-mobile-nav,
+  .sticky .btn-mobile-nav {
+    display: block;
+    z-index: 10000;
+  }
+
+  .nav-header--mobile .btn-mobile-nav {
+    display: block;
+    z-index: 10000;
+  }
+
   .heading-primary {
     font-size: 9rem;
   }

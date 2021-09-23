@@ -39,7 +39,7 @@
 
   display: flex;
   justify-content: space-between;
-  /*Agregar la clase a "main-nav": .flex--jc-space-btw */
+
   padding: 0.4rem 1.6rem;
   z-index: 1;
   background-color: var(--c-white-1);
